@@ -385,8 +385,7 @@ const RentTracking = () => {
                       e.stopPropagation();
                       handleEditPayment(payment);
                     }}
-                    title="Edit Payment"
-                    title={payment.paid ? "Mark as Unpaid" : "Mark as Paid"}
+                    title={`Edit Payment: ${payment.paid ? "Mark as Unpaid" : "Mark as Paid"}`}
                   >
                     <Edit className="h-4 w-4" />
                   </Button>
