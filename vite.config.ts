@@ -9,6 +9,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  build: {
+    chunkSizeWarningLimit: 1000, // Increase chunk size warning limit to 1000 kB
+  },
   plugins: [
     react(),
     mode === 'development' &&
